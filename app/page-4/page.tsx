@@ -53,43 +53,47 @@ const ShipParticulars = () => {
 
   return (
     <div className="container pt-10 pb-16  grid grid-cols-12 gap-y-10 xl:gap-x-10">
-      <div
-        className="col-span-12 p-4 bg-[#ECEFF1] xl:col-span-3"
-        style={{
-          boxShadow: "0px 8px 30px 0px rgba(9, 33, 57, 0.20)",
-        }}
-      >
-        <div>
-          <h4 className="text-lg font-bold">Service</h4>
+      <div className="col-span-12 xl:col-span-3">
+        <div
+          className=" min-h-[694px] gap-y-10 bg-[#ECEFF1] flex flex-col justify-between p-4  "
+          style={{
+            boxShadow: "0px 8px 30px 0px rgba(9, 33, 57, 0.20)",
+          }}
+        >
+          <div className="space-y-2">
+            <h4 className="text-lg font-bold">Service</h4>
+            <ul className="flex flex-col pt-4 gap-y-2">
+              <li>
+                <Link className="flex items-center gap-x-2" href={"/page-4"}>
+                  <Image
+                    width={30}
+                    height={32}
+                    src={"/images/icons1.svg"}
+                    alt="Emission using IMO"
+                  />
+                  <span className="text-base text-[#1F263E]">
+                    Emission using IMO
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link className="flex items-center gap-x-2" href={"/page-6"}>
+                  <Image
+                    width={28}
+                    height={28}
+                    src={"/images/icons2.svg"}
+                    alt="Emission using Ship Details"
+                  />
+                  <span className="text-base text-[#1F263E]">
+                    Emission using Ship Details
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <Button>Upload a CSV</Button>
         </div>
-        <ul className="flex flex-col pt-4 gap-y-2">
-          <li>
-            <Link className="flex items-center gap-x-2" href={"/page-4"}>
-              <Image
-                width={30}
-                height={32}
-                src={"/images/icons1.svg"}
-                alt="Emission using IMO"
-              />
-              <span className="text-base text-[#1F263E]">
-                Emission using IMO
-              </span>
-            </Link>
-          </li>
-          <li>
-            <Link className="flex items-center gap-x-2" href={"/page-6"}>
-              <Image
-                width={28}
-                height={28}
-                src={"/images/icons2.svg"}
-                alt="Emission using Ship Details"
-              />
-              <span className="text-base text-[#1F263E]">
-                Emission using Ship Details
-              </span>
-            </Link>
-          </li>
-        </ul>
       </div>
       <div className="col-span-12 xl:col-span-9 grid gap-10 lg:grid-cols-12">
         <div className="space-y-2 col-span-12  flex flex-col gap-y-3 lg:col-span-4 ">
