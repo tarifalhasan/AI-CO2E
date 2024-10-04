@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -37,14 +38,16 @@ const Hero = () => {
               estimation in the maritime domain.
             </p>
           </div>
-          <Button
-            style={{
-              boxShadow: "0px 20px 35px 0px rgba(241, 165, 1, 0.15)",
-            }}
-            className="bg-[#ECEFF1] px-11 text-base xl:text-2xl font-overlock  hover:bg-[#ECEFF1]/80 rounded-[10px] h-[60px] text-black"
-          >
-            Explore
-          </Button>
+          <Link passHref legacyBehavior href={"#ongoing_research"}>
+            <Button
+              style={{
+                boxShadow: "0px 20px 35px 0px rgba(241, 165, 1, 0.15)",
+              }}
+              className="bg-[#ECEFF1] px-11 text-base xl:text-2xl font-overlock  hover:bg-[#ECEFF1]/80 rounded-[10px] h-[60px] text-black"
+            >
+              Explore
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

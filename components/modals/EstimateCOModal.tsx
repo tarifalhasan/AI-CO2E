@@ -20,7 +20,10 @@ const EstimateCOModal = () => {
           <div className="space-y-3">
             <p className="text-lg font-medium">Time at Sea</p>
             <div className="flex w-full items-center space-x-2">
-              <Input type="text" placeholder="Email" />
+              <Input
+                type="text"
+                placeholder="Enter the time at sea  in hours *"
+              />
               <Button variant={"destructive"} type="submit">
                 Submit
               </Button>

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const OngoingResearch = () => {
   return (
-    <div className="py-10 xl:py-20 container">
+    <div id="ongoing_research" className="py-10 xl:py-20 container">
       <div>
         <h2 className="text-4xl lg:text-5xl font-bold font-overlock text-center">
           Ongoing Research

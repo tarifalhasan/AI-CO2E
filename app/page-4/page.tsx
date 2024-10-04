@@ -64,7 +64,7 @@ const ShipParticulars = () => {
         </div>
         <ul className="flex flex-col pt-4 gap-y-2">
           <li>
-            <Link className="flex items-center gap-x-2" href={"/"}>
+            <Link className="flex items-center gap-x-2" href={"/page-4"}>
               <Image
                 width={30}
                 height={32}
@@ -77,7 +77,7 @@ const ShipParticulars = () => {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-x-2" href={"/"}>
+            <Link className="flex items-center gap-x-2" href={"/page-6"}>
               <Image
                 width={28}
                 height={28}

@@ -14,7 +14,7 @@ import { MobileHeader } from "@/components/MobileHeader";
 import { MainHeader } from "@/components/ui/Header";
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
-
+import "./style.css";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
