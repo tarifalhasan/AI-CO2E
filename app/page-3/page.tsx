@@ -1,4 +1,6 @@
-import { Button } from "@/components/ui/button";
+import EstimateCOModal from "@/components/modals/EstimateCOModal";
+import EstimateFCModal from "@/components/modals/EstimateFCModal";
+import EstimateTEModal from "@/components/modals/EstimateTEModal";
 import { Card, CardContent } from "@/components/ui/card";
 import { Search } from "lucide-react";
 import Image from "next/image";
@@ -59,7 +61,7 @@ const ShipParticulars = () => {
         <div className="col-span-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           <Card>
             <CardContent className="pt-4 gap-y-5 flex flex-col items-center">
-              <Button className="w-full">Estimate TE</Button>
+              <EstimateTEModal />
               <div>
                 <p className="text-justify font-sans text-base text-black leading-[162%]">
                   The Energy Efficiency Design Index for International Shipping
@@ -75,7 +77,7 @@ const ShipParticulars = () => {
           </Card>
           <Card>
             <CardContent className="pt-4 gap-y-5 flex flex-col items-center">
-              <Button className="w-full">Estimate FC</Button>
+              <EstimateFCModal />
               <div>
                 <p className="text-justify font-sans text-base text-black leading-[162%]">
                   Fuel consumption (FC) measured in metric tonnes (m tonnes)
@@ -90,7 +92,7 @@ const ShipParticulars = () => {
           </Card>
           <Card>
             <CardContent className="pt-4 gap-y-5 flex flex-col items-center">
-              <Button className="w-full">Estimate CO</Button>
+              <EstimateCOModal />
               <div>
                 <p className="text-justify font-sans text-base text-black leading-[162%]">
                   Carbon emissions (CE) measured in metric tonnes (m tonnes)

@@ -86,21 +86,21 @@ const NavigationsLinks: React.FC<NavigationsLinksProps> = ({
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem onClick={() => setIsOpenMenu(false)}>
-          <Link href="/ship-particulars" legacyBehavior passHref>
+          <Link href="/page-2" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Ship Particulars
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem onClick={() => setIsOpenMenu(false)}>
-          <Link href="/emission-estimation" legacyBehavior passHref>
+          <Link href="/page-3" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Emission Estimations
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem onClick={() => setIsOpenMenu(false)}>
-          <Link href="/sg-port-emission" legacyBehavior passHref>
+          <Link href="/page-5" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               SG Port Emissions
             </NavigationMenuLink>
