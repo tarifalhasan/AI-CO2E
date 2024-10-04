@@ -17,7 +17,7 @@ const ShipParticulars = () => {
         </div>
         <ul className="flex flex-col pt-4 gap-y-2">
           <li>
-            <Link className="flex items-center gap-x-2" href={"/page-4"}>
+            <Link className="flex items-center gap-x-2" href={"/page-5"}>
               <Image
                 width={30}
                 height={32}
